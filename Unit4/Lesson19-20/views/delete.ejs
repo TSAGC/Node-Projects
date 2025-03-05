@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Subscriber</title>
+</head>
+<body>
+  <h1>Delete Subscriber</h1>
+  <p>Are you sure you want to delete this subscriber?</p>
+  <form action="/delete/<%= subscriber._id %>" method="GET">
+    <button type="submit">Delete</button>
+  </form>
+  <a href="/">Cancel</a>
+</body>
+</html>

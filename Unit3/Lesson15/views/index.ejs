@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribers</title>
+</head>
+<body>
+    <h1>Subscribers List</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Subscribed Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% subscribers.forEach(subscriber => { %>
+                <tr>
+                    <td><%= subscriber.name %></td>
+                    <td><%= subscriber.email %></td>
+                    <td><%= subscriber.subscribedDate.toDateString() %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

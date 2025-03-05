@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Subscriber</title>
+</head>
+<body>
+  <h1>Edit Subscriber</h1>
+  <form action="/edit/<%= subscriber._id %>" method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" value="<%= subscriber.name %>" required>
+    <label>Email:</label>
+    <input type="email" name="email" value="<%= subscriber.email %>" required>
+    <button type="submit">Update</button>
+  </form>
+  <a href="/">Back to List</a>
+</body>
+</html>

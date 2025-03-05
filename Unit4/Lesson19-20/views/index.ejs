@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subscribers</title>
+</head>
+<body>
+  <h1>Subscribers</h1>
+  <a href="/create">Add New Subscriber</a>
+  <ul>
+    <% subscribers.forEach(subscriber => { %>
+      <li>
+        <%= subscriber.name %> - <%= subscriber.email %>
+        <a href="/edit/<%= subscriber._id %>">Edit</a>
+        <a href="/delete/<%= subscriber._id %>">Delete</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
