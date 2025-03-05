@@ -227,7 +227,7 @@ router.post("/", (req, res) => {
 
 // Create an HTTP server using the router and listen on the specified port
 http.createServer(router.handle).listen(port);
-console.log(`The server is listening on port number: ${port}`); // Log server startup message
+console.log(`The server is listening on port number: ${port}`); // Log a message indicating the server is running
 
 
 

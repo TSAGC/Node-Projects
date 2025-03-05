@@ -7,6 +7,7 @@ const port = 3000;
 app.use(errorController.respondNoResourceFound);
 app.use(errorController.respondInternalError);
 
+
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });

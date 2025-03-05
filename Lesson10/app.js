@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 app.set('view engine', 'ejs'); // Set the view engine to ejs
-app.set('views', './views'); // Set the views directory to ./views
+app.set('views', './views');
 
 app.get('/', (req, res) => {
     res.send('Welcome to the main page!');

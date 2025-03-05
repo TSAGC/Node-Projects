@@ -52,7 +52,7 @@ router.get("/bootstrap.css", (req, res) => {
 
 router.get("/confetti_cuisine.js", (req, res) => {
     res.writeHead(httpStatus.OK, contentTypes.js);
-    utils.getFile("public/js/confetti_cuisine.js", res);
+    utils.getFile("public/js/confetti_cuisine.js", res);// use the utils.getFile function to read the file and send it to the client
 });
 
 http.createServer(router.handle).listen(port);

@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-// controller Functions
-
 exports.sendReqParam = (req, res) => {
     let veg = req.params.vegetable;
     res.send(`This is the page for ${veg}`);

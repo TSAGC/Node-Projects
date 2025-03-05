@@ -16,5 +16,5 @@ app = http.createServer((request, response) => {
 });
 
 
-app.listen(port);
+app.listen(port);// get port number
 console.log(`The server has started and is listening on port number:➥ ${port}`);
